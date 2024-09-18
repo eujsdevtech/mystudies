@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* { /*Configurações globais no CSS*/
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /*height: 100%;*/
+}
+body {
+    background-image:linear-gradient(to right, #63bf7a, #88f2a2) ;
+    background-attachment: fixed;
+}
+main {
+    background-color: #404040;
+    border-radius: 15px;
+    box-shadow: 05px 05px 15px #f2f2f2;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1 {
+    color: #63bf7a;
+    text-align: center;
+}
+h2 {
+    color: #458c57;
+}
+p {
+    color: #f2f2f2;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alura - Aula 1</title>
+</head>
+<body>
+    <header><!--Cabeçalho da página.-->
+        <div style="text-align: center;">
+            <img src="image/mgl_logo.png" alt="Logo marca" width="80" >
+        </div>
+        <h1>My Games Lab</h1>
+    </header>
+    <main><!--Conteúdo da página.-->
+        <section>
+            <input type="text" placeholder="Digite o nome da equipe!" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+    <footer>
+        <p>2024 - My Games Lab Ltda. Todos os direitos reservados.</p>
+        <p>Entre em contato através do email: help@mglbr.com.br</p>
+    </footer>
+    <script src="javascript/dados.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

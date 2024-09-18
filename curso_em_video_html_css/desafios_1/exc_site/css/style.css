@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* Define a codificação de caracteres como UTF-8 */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Importa a fonte 'Bebas Neue' do Google Fonts */
+
+@font-face {
+    font-family: 'IDroid';
+    src: url('../fonts/IDroid.otf') format('opentype');
+}
+/* Define uma fonte personalizada chamada 'IDroid' */
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'IDroid', cursive;
+}
+/* Define variáveis de cores e fontes para uso no documento */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Remove margens e preenchimentos padrão de todos os elementos */
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+/* Define a cor de fundo e a fonte padrão do corpo do documento */
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+/* Adiciona um ícone de link externo após links com a classe 'externo' */
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.63);
+}
+/* Estiliza o cabeçalho com um gradiente de fundo, altura mínima, alinhamento de texto e sombra de texto */
+
+header > h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-family: var(--fonte-destaque);
+}
+/* Estiliza o título do cabeçalho com cor branca, margem inferior, tamanho da fonte e fonte de destaque */
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.63);
+}
+/* Estiliza o parágrafo do cabeçalho com cor branca, tamanho da fonte, fonte padrão, largura máxima, preenchimento e sombra de texto */
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.589);
+}
+/* Estiliza a barra de navegação com cor de fundo, preenchimento e sombra de texto */
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5ms;
+}
+/* Estiliza os links de navegação com cor branca, preenchimento, sem sublinhado, negrito, bordas arredondadas e transição */
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+/* Estiliza os links de navegação ao passar o mouse com cor de fundo e cor de texto diferentes */
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* Estiliza a área principal com cor de fundo branca, largura mínima e máxima, margens, preenchimento, sombra e bordas arredondadas */
+
+main h2 {
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+/* Estiliza os títulos da área principal com cor, fonte, tamanho da fonte, gradiente de fundo e indentação de texto */
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+/* Estiliza os parágrafos da área principal com margens, alinhamento justificado, indentação de texto, tamanho da fonte e altura da linha */
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+/* Estiliza o texto em negrito na área principal com cor e peso da fonte */
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding: 2px 6px;
+}
+/* Estiliza os links na área principal com sem sublinhado, negrito, cor de fundo, cor de texto e preenchimento */
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+/* Estiliza os links na área principal ao passar o mouse com sublinhado e cor de texto diferentes */
+
+main img {
+    width: 100%;
+}
+/* Define a largura das imagens na área principal para 100% */
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+/* Estiliza as imagens pequenas na área principal com largura máxima, exibição em bloco e margem automática */
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px -30px -20px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+}
+/* Estiliza a div de vídeo com cor de fundo, margens, preenchimento e posição relativa */
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/* Estiliza o iframe dentro da div de vídeo com posição absoluta e dimensões */
+
+aside {
+    background-color: var(--cor1);
+    margin-top: 3rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px hsla(0, 0%, 0%, 0.603);
+}
+/* Estiliza a barra lateral com cor de fundo, margem superior, preenchimento, bordas arredondadas e sombra */
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+/* Estiliza os títulos da barra lateral com cor de fundo, cor de texto, preenchimento, margens negativas e bordas arredondadas */
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2705\00A0\00A0';
+    columns: 2;
+}
+/* Estiliza a lista na barra lateral com posição do estilo da lista, tipo de estilo da lista e colunas */
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Estiliza o rodapé com cor de fundo, cor de texto, alinhamento central e preenchimento */
+
+footer a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+/* Estiliza os links no rodapé com sem sublinhado e cor de texto */
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+/* Estiliza os links no rodapé ao passar o mouse com sublinhado e cor de texto diferentes */

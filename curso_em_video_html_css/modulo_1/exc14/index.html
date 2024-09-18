@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Image/favicon.ico" type="image/x-icon">
+    <title>Exercício 14</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas:</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos com resoluções diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture><!--Tag de responsividade para exibir ás imagens do site de acordo com tamanho de tela do usuário.-->
+        <source media="(max-width: 750px)" srcset="Image/imgp.png" type="image/png"> <!--Parêmetro usado para indexar imagens de acordo com a largura de tela do usuário.-->
+        <source media="(max-width: 1050px)" srcset="Image/imgm.png" type="image/png">
+        <img src="Image/imgg.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio:</h1>
+    <p>
+        Aprendendo a indexar mídias de áudio no HTML5.
+    </p>
+    <audio src="midia/goodenergy-dyalla.mp3" controls></audio><!--Estrutura simples, apenas com parâmetro de controles.-->
+    <audio preload="metadata" controls loop><!--Estrutura avançado para diversos formatos de áudio, parâmetros de controle(controls), início automático(autoplay) e reprodução infinita(loop).-->
+        <source src="midia/bump-dyalla.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Indexando vídeos no meu site:</h1>
+    <p>
+        Inserindo vídeos no meu site de a partir de uma hospedagem local &darr;
+    </p>
+    <video src="midia/video_1.mp4" width="480" controls></video><!--Estrutura simples para anexar videos no site, com tamanho de tela pré-definido(width) e controles de reprodução(controls)-->
+    <video width="480" poster="image/reunioes-2k.jpg" controls autoplay loop><!--Estrutura avanaçada, permite indexar diversos formatos para casos de compatibilidade, parâmetros de capa(poster), controle(controls), início automático(autoplay) e reprodução infinita(loop)-->
+        <source src="midia/video_2.mp4" type="video/mp4">
+    </video>
+    <p>
+        Inserido vídeos no meu site com hospedagem remota/online:
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="CGI Animation Showreel HD &quot;Animation Show Reel&quot; by AnimationCafe Studio | CGMeetup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--Incorporação de vídeos através hospedagem online(YouTube/Vimeo).-->
+    <iframe src="https://player.vimeo.com/video/123222594?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="A Lei da Água (Novo Código Florestal)"></iframe>
+</body>
+</html>
