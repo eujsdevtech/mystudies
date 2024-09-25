@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/faviconjs.png" type="image/x-icon">
+    <title>DETRAN - SF</title>
+    <style>
+        :root {
+            --cor1: #F2CE16;
+            --cor2: #F2C12E;
+            --cor3: #F2AC29;
+            --cor4: #F2F2F2;
+            --cor5: #0D0D0D;
+        }
+        body {
+            background-color: var(--cor1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input {
+            background-color: var(--cor1);
+            border-style: solid black;
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        .entrada {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .saida {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width: 350px;
+            border: 2px solid var(--cor5);
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/detran_ba.png" alt="Logo Dentra-BA" width="80">
+        <h1>Sistema de Multas:</h1>
+    </header>
+        <main>
+            <div class="entrada">
+                Velocidade do Veículo: <input type="number" name="txtvel" id="txtvel"> Km/h
+                <input type="button" value="Verificar" onclick="calcular()">
+            </div>
+            <div id="res" class="saida"></div>
+        </main>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector("input#txtvel")
+            var res = window.document.querySelector("div#res")
+            var vel = Number(txtv.value)
+            var mul = vel * (3.50)
+            res.innerHTML = `<p>A velocidade informada é ${vel} Km/h.</p>`
+            if (vel > 60) {
+                res.innerHTML += `O veículo foi <strong>multado</strong> por excesso de velocidade!`
+            }
+            if (mul >= 213) {
+                res.innerHTML += `<p>Valor da multa R$ ${mul.toFixed(2)}</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
