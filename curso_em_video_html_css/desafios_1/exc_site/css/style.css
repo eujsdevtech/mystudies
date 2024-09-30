@@ -45,7 +45,7 @@ header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
-    padding-top: 40px;
+    padding: 24px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.63);
 }
 /* Estiliza o cabeçalho com um gradiente de fundo, altura mínima, alinhamento de texto e sombra de texto */
@@ -72,6 +72,7 @@ header > p {
 
 nav {
     background-color: var(--cor5);
+    text-align: center;
     padding: 10px;
     text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.589);
 }
