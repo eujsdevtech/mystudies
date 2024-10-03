@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    height: 98vh; /* Define altura máxima da viewport(area em branco da página). */
+    background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png"); /* Link externo da imagem de fundo. */
+    background-size: 100px; /* Define o tamanho máximo da imagem de fundo. */
+    background-position: center center; /* Declara o alinhamento em colunas(y) e linhas(x) da imagem de fundo. */ 
+    background-repeat: no-repeat; /* Declara o parêmetro de repetição da imagem de fundo. */
+    border: 1px dashed black; /* Declara o tamanho, o tipo e a cor da borda da área. */
+}

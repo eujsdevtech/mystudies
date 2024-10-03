@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body {
+    height: 98vh; /* Declara o espaço utlizado pelo body na viewport. */
+    background-image: url("../image/wallpaper003.jpg"); /* Define fundo através de link externo. */
+    background-position: center center; /* Define a posição em colunas e linhas do fundo da página. */
+    background-repeat: no-repeat; /* Declarar as condições de repetição do fundo da página. */
+    border: 1px dashed black; /* Define o tamanho, o tipo e cor da borda da área do body. */
+}

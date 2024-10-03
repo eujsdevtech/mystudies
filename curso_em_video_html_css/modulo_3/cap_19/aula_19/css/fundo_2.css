@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png"); /* Define o fundo a partir de um link externo ou através de caminho de pastas interno. */
+    background-size: 100px 100px; /* Define o tamanho da largura(x) e altura(y) da imagem. */
+    background-repeat: no-repeat; /* Declara os parâmetros de repetição imagem. */
+}

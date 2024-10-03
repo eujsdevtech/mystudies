@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    height: 100vh; /* Declarar á altura do body em relação a viewport. */
+    background-color: black; /* Declarar a cor de fundo. */
+    background-image: url("../image/wallpaper002.jpg"); /* Definer a imagem de fundo através de um link externo. */
+    background-repeat: no-repeat; /* Declarar as condições de repetição do fundo. */
+    background-position: center center; /* Determina que o fundo fique centralizado.*/
+    background-size: cover; /* Declara que o fundo deve cobrir toda a viewport. */
+}
+
+main {
+    background-color: white; /* Declarar a cor de fundo. */
+    width: 400px; /* Declarar o tamanho do conteúdo. */
+    padding: 10px; /* Define o tamanho da margem interna do contéudo. */
+    margin: auto; /* Determina o tamanho da margem externa do conteúdo automáticamente. */
+    border: 1px solid darkblue; /* Defini o tamanho, o tipo e a cor da borda. */
+    border-radius: 15px; /* Declara a curvatura da borda radial(circular). */
+}
