@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#container {
+    background-image: url("../image/target001.png"); /* Defini o fundo com base em um caminho interno do projeto. */
+    background-size: 100% 100%; /* Declarar qual será a proporção do fundo sobre a viewport. Vertical e Horizontalmente.*/
+    position: relative; /* Declara que o container terá uma posição relativa.*/
+    height: 500px; /* Defini a altura do container. */
+    padding: 10px; /* Defini a borda interna do conteúdo, dentro do container. */
+    background-color: blueviolet; /* Defini a cor de fundo. */
+}
+
+#conteudo {
+    background-image: url("../image/target001.png"); /* Defini o fundo com base em um caminho interno do projeto. */
+    background-size: 100% 100%; /* Declarar qual será a proporção do fundo sobre a viewport. Vertical e Horizontalmente.*/
+    position: absolute; /* Declara que o conteúdo terá uma posição absoluta sobre o container.*/
+    height: 200px; /* Defini a altura do conteúdo. */
+    width: 400px; /* Defini a largura do conteúdo. */
+    background-color: yellow; /* Defini a cor de fundo. */
+    left: 50%; /* Defini que a partir do parâmetro absoluto o conteúdo interno ficará 50% á esquerda da viewport. */
+    top: 50%; /* Defini que a partir do parâmetro absoluto o conteúdo interno ficará 50% ao topo da viewport. */
+    transform: translate(-50%, -50%); /* Permite transformar o conteúdo, nesse caso movendo-u com base nós parêmetros definidos anteriormente, left e top. */
+}

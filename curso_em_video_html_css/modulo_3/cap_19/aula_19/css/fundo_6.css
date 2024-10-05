@@ -7,11 +7,15 @@ body {
     background-repeat: no-repeat; /* Declarar as condições de repetição do fundo. */
     background-position: center center; /* Determina que o fundo fique centralizado.*/
     background-size: cover; /* Declara que o fundo deve cobrir toda a viewport. */
+    background-attachment: fixed;
+    /*
+    Shorthand - background: color > image > position > size > attachment
+    */
 }
 
 main {
     background-color: white; /* Declarar a cor de fundo. */
-    width: 400px; /* Declarar o tamanho do conteúdo. */
+    max-width: 700px; /* Declarar o tamanho do conteúdo. */
     padding: 10px; /* Define o tamanho da margem interna do contéudo. */
     margin: auto; /* Determina o tamanho da margem externa do conteúdo automáticamente. */
     border: 1px solid darkblue; /* Defini o tamanho, o tipo e a cor da borda. */
