@@ -90,7 +90,7 @@ section#image-dois { /* Declara os parametros para uma sessão com identificador
 footer { /* Declara os parametros para rodapé da página. */
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 18px;
     margin: 2px;
     text-align: center;
     border-radius: 0px 0px 8px 8px;
