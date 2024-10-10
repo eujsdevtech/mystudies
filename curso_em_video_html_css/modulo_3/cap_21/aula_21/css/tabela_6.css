@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+caption { /* Declara os parametros para a legenda da tabela. */
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px;
+    background-color: lightsteelblue;
+}
+
+thead { /* Declara os parametros do cabeçalho e rodapé da tabela.*/
+    background-color: slategray;
+    color: white;
+}
+
+.media {
+    background-color: slategray;
+    color: white;
+}
+
+td, th { /* Declara os parametros para os titúlos e dados presente dentro da tabela. */
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
