@@ -1,0 +1,55 @@
+/**
+ * Estilos globais
+ */
+ * {
+    padding: 0;  /* Remove preenchimento padrão */
+    margin: 0;   /* Remove margem padrão */
+    box-sizing: border-box;  /* Inclui preenchimento e borda na largura e altura */
+}
+
+/**
+ * Contêiner de grade
+ */
+.grid {
+    padding: 15px;  /* Preenchimento interno */
+}
+.grid::after {
+    content: "";  /* Limpa elementos flutuantes */
+    display: block;
+    clear: both;
+}
+
+/**
+ * Colunas dentro do contêiner de grade
+ */
+.grid .col {
+    width: 300px;  /* Largura da coluna */
+    height: 300px;  /* Altura da coluna */
+    float: left;  /* Flutua à esquerda */
+    padding: 15px;  /* Preenchimento interno */
+}
+
+/**
+ * Conteúdo das colunas
+ */
+.grid .col-content {
+    width: 100%;  /* Largura do conteúdo */
+    height: 100%;  /* Altura do conteúdo */
+    background-color: darkslategray;  /* Cor de fundo */
+    color: white;  /* Cor do texto */
+}
+/**
+ * Responsividade para diferentes tamanhos de tela
+ */
+ @media all and (max-width: 568px) {
+    .grid .col { width: 100%; }  /* Tela pequena */
+}
+@media all and (min-width: 569px) and (max-width: 768px) {
+    .grid .col { width: 50%; }  /* Tela média */
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .grid .col { width: 33.33%; }  /* Tela grande */
+}
+@media all and (min-width: 1200px) {
+    .grid .col { width: 25%; }  /* Tela extra grande */
+}
