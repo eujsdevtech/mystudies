@@ -1,0 +1,47 @@
+/* Seletores Globais: Aplica estilos a todos os elementos da página */
+* {
+    /* Remove qualquer margem (espaço entre elementos) dos elementos */
+    margin: 0;
+    /* Remove qualquer preenchimento (espaço interno) dos elementos */
+    padding: 0;
+    /* Altera o modo como o navegador calcula a largura e altura de um elemento */
+    box-sizing: border-box;
+}
+
+/* Container Flexível */
+.flex-container {
+    /* Define o container como um flex container */
+    display: flex;
+    /* Define a direção dos itens flexíveis (neste caso, horizontal) */
+    flex-direction: row;
+    /* Permite que os itens flexíveis sejam quebrados em múltiplas linhas */
+    flex-wrap: wrap;
+    /* Alinha os itens flexíveis horizontalmente no centro do container */
+    justify-content: center;
+    /* Alinha os itens flexíveis verticalmente no centro do container */
+    align-items: stretch;
+    /* Alinha o conteúdo dos itens flexíveis verticalmente no centro do container */
+    align-content: center;
+    /* Define a cor de fundo do container */
+    background-color: darkcyan;
+    /* Adiciona uma margem ao container */
+    margin: 10px;
+}
+
+/* Itens Flexíveis */
+.flex-item {
+    /* Define a cor de fundo do item flexível */
+    background-color: aquamarine;
+    /* Define a cor do texto do item flexível */
+    color: black;
+    /* Alinha o texto do item flexível no centro */
+    text-align: center;
+    /* Define a largura do item flexível */
+    width: 250px;
+    /* Define a altura do item flexível */
+    height: 250px;
+    /* Adiciona um preenchimento ao item flexível */
+    padding: 10px;
+    /* Adiciona uma margem ao item flexível */
+    margin: 5px;
+}
