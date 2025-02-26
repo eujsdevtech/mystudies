@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body > p {
+    padding: 10px;
+}
+
+a {
+    padding: 8px;
+}
+
+header {
+    background-color: lightslategrey;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
