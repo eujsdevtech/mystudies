@@ -8,15 +8,32 @@
 }
 
 /**
+* Propriedades de rolagem do HTML
+*/
+html {
+    scroll-behavior: smooth; /* Parêmtro de rolagem */
+}
+
+/**
+* Estilos do corpo da página
+*/
+body {
+    font-family: sans-serif; /* Define a família de fontes */
+}
+
+/**
  * Contêiner de grade
  */
 .grid {
     padding: 15px;  /* Preenchimento interno */
+    max-width: 1200px; /* Define a resolução máxima do componente */ 
+    margin: 0 auto; /* Define margin superior e inferior zero, e margin da direita e esquerda automática */
+    padding-top: 73px; /* Preenchimento interno superior */
 }
 .grid::after {
     content: "";  /* Limpa elementos flutuantes */
-    display: block;
-    clear: both;
+    display: block; /* Define estilo do display em blocos */
+    clear: both; /* Requisita que componente faça uma limpeza de espaço tanto a sua direita, quanto a sua esquerda */
 }
 
 /**
@@ -37,7 +54,59 @@
     height: 100%;  /* Altura do conteúdo */
     background-color: darkslategray;  /* Cor de fundo */
     color: white;  /* Cor do texto */
+    border-radius: 20px; /* Define uma borda arrendondada  para conteúdo */
+    text-align: center; /* Alinha o texto do conteúdo ao centro */
+    box-shadow: 5px 5px 5px lightseagreen; /* Define o efeito de sobra em blocos */
 }
+/**
+* Menu de navegação
+*/
+.menu {
+    width: 100%; /* largura do conteúdo */
+    position: fixed; /* Posição do conteúdo(fixo) */
+    background-color: lightslategrey; /* Cor de fundo do conteúdo*/
+}
+
+.menu ul {
+    list-style: none; /* Desativa a estilização padrão de uma lista */
+    display: block; /* Define a condição de bloco para contéudo no display */
+    max-width: 1200px; /* Especifica a resolução em pixels máxima para o conteúdo */
+    padding: 0 30px; /* Define o espaçamento superior interno e o lateral */
+    margin: 0 auto; /* Define o espaçamento superior externo e lateral */
+}
+
+.menu ul li {
+    float: left; /* Define o conteúdo como flotoante para esquerda */
+}
+
+.menu ul li a {
+    display: block; /* Define a condição de bloco para contéudo no display */
+    color: white; /* Define a cor do texto */
+    padding: 20px; /* Define os espaçamento interno do conteúdo */
+    text-decoration: none; /* Retira os simbolos de personalização padrão de uma lista não ordenada */
+    transition: all 300ms ease-in-out; /* Define parâmetros de trasição para um efeito de ação a seguir */
+}
+
+.menu ul li a:hover {
+    background-color: lightskyblue; /* Cor de fundo do conteúdo*/
+    color: slategray; /* Define a cor do texto */
+    border-radius: 0 10px; /* Define uma borda arrendondada  para o efeito de ação correspondete ao conteúdo */
+}
+
+.full-page {
+    padding: 0 30px;  /* Preenchimento interno superior e lateral*/
+    max-width: 100%; /* Define a resolução máxima do componente */ 
+    padding-top: 73px; /* Preenchimento interno superior */
+    height: 100vh; /* Define o parametro de altura em 100% da viewport(tela do navegador)*/
+    background-color: aquamarine; /* Cor de fundo do conteúdo*/
+}
+
+.full-page-content {
+    max-width: 1200px; /* Especifica a resolução em pixels máxima para o conteúdo */
+    padding: 0 30px; /* Preenchimento interno superior e lateral */
+    margin: 0 auto; /* Define margin superior e inferior zero, e margin da direita e esquerda automática */
+}
+
 /**
  * Responsividade para diferentes tamanhos de tela
  */
