@@ -1,0 +1,46 @@
+/* 
+ * Estilos globais para todos os elementos
+ */
+ * {
+    /* Remover margens e preenchimentos padrão */
+    margin: 0;
+    padding: 0;
+    /* Utilizar box-sizing para incluir bordas e preenchimentos na largura e altura */
+    box-sizing: border-box;
+}
+
+/* 
+ * Estilos para o corpo da página
+ */
+body {
+    /* Definir fonte sans-serif para todo o corpo da página */
+    font-family: sans-serif;
+    /* Definir tamanho de fonte para todo o corpo da página */
+    font-size: 20px;
+}
+
+/* 
+ * Estilos para o container de grade
+ */
+.grid {
+    /* Definir largura máxima para o container de grade */
+    max-width: 1200px;
+    /* Centralizar o container de grade horizontalmente */
+    margin: 0 auto;
+    /* Utilizar display grid para criar uma grade */
+    display: grid;
+    /* Definir template de colunas para a grade */
+    grid-template-columns: repeat(auto-fill, minmax(162px, 1fr));
+    /* Definir espaçamento entre itens da grade */
+    gap: 30px;
+}
+
+/* 
+ * Estilos para os itens da grade
+ */
+.grid div {
+    /* Definir cor de fundo para os itens da grade */
+    background-color: slategray;
+    /* Definir altura mínima para os itens da grade */
+    min-height: 100px;
+}
